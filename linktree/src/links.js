@@ -12,7 +12,7 @@ export const Links = [
     "link": "https://soundcloud.com/teayo/"
   },
   {
-    "name": "free notepad",
+    "name": "Notepad",
     "link": "https://notes.teaguehannam.com/"
   },
   {

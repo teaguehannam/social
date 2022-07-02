@@ -7,11 +7,6 @@ html, body {
 
 body {
 	background: rgb(20,21,23);
-	/* set background image */
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
 	color: #333;
 	margin: 0;
 	padding: 8px 0;
