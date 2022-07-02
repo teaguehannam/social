@@ -1,19 +1,19 @@
 export const Links = [
   {
-    "name": "Github",
-    "link": "https://github.com/teaguehannam"
-  },  
-  {
-    "name": "My site",
-    "link": "https://teaguehannam.com/"
+    "name": "Email",
+    "link": "https://contact.teaguehannam.com"
   },
   {
-    "name": "Flickr",
-    "link": "https://www.flickr.com/photos/teayo/"
+    "name": "Github",
+    "link": "https://github.com/teaguehannam"
   },
   {
     "name": "Soundcloud",
     "link": "https://soundcloud.com/teayo/"
+  },
+  {
+    "name": "free notepad",
+    "link": "https://notes.teaguehannam.com/"
   },
   {
     "name": "Stack Overflow",

@@ -8,7 +8,6 @@ html, body {
 body {
 	background: rgb(20,21,23);
 	/* set background image */
-	background: url('../wp1.gif') no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
