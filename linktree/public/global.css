@@ -1,0 +1,26 @@
+html, body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	cursor: default;
+}
+
+body {
+	background: rgb(20,21,23);
+	/* set background image */
+	background: url('../wp1.gif') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color: #333;
+	margin: 0;
+	padding: 8px 0;
+	box-sizing: border-box;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+a, a:visited {
+	color: rgb(184,184,184);
+	text-decoration: none;
+}
