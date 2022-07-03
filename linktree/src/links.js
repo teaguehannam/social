@@ -12,6 +12,10 @@ export const Links = [
     "link": "https://soundcloud.com/teayo/"
   },
   {
+    "name": "Media",
+    "link": "https://media.teaguehannam.com/"
+  },
+  {
     "name": "Notepad",
     "link": "https://notes.teaguehannam.com/"
   },
