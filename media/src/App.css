@@ -8,6 +8,6 @@ body {
 }
 
 h1, h2, h3, code, a {
-	margin: 0;
 	font-weight: 300;
+	margin: 0;
 }

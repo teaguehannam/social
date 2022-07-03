@@ -1,12 +1,11 @@
 <script>
   import ocean from './vids/ocean.mp4'
   import loading from './vids/loading.gif'
-  import test from './test.mp3';
-
-  const cWidth = window.innerWidth;
+  import test from './audio/test.mp3'
 </script>
 
-<header>Welcome to free media</header>
+
+<header>Welcome to media</header>
 
 <main>
   <code>Video</code>
@@ -14,11 +13,18 @@
     <source src={ocean} type="video/mp4">
       - video here -
   </video>
+  <audio controls>
+    <source src={test} type="audio/mp3">
+      - audio here -
+  </audio>
   <code>Gif</code>
   <img src={loading} alt="Load vid" />
-  <code>iframe</code>
+  <code>notepads</code>
+  <iframe src="https://notes.teaguehannam.com/"></iframe>
+  <code>iframe test</code>
   <iframe src="https://2nami.com/"></iframe>
 </main>
+
 
 <style>
   header {
