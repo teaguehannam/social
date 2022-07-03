@@ -1,6 +1,6 @@
 export const Links = [
   {
-    "name": "Email",
+    "name": "Contact",
     "link": "https://contact.teaguehannam.com"
   },
   {
@@ -20,8 +20,8 @@ export const Links = [
     "link": "https://stackoverflow.com/users/14168754/"
   },
   {
-    "name": "Twitter",
-    "link": "https://twitter.com/teaguehannam"
+    "name": "Nutrients",
+    "link": "https://currentnutrients.com/"
   },
   {
     "name": "YouTube",
