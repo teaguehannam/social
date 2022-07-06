@@ -31,9 +31,13 @@ section {
 	max-width: 900px;
 	margin: 0 auto;
 }
+main {
+	display: grid;
+}
 main, main > video, main > img {
-	margin: 2vh auto;
+	margin: 4vh auto;
 	max-height: 40vh;
+	max-width: 80vw;
 }
 img {
 	border-radius: 50%;
@@ -49,16 +53,37 @@ h3 {
 	letter-spacing: 0.1vw;
 }
 textarea {
-	padding: 2vh 2vw;
+	padding: 0 2vw;
 	font-size: calc(1rem + 1vh);
 	line-height: calc(1.5rem + 2vh);
 	background: rgba(66,66,67,0.4);
 	color:#00FF59;
 	border:none; 
-	width: 90%;
 	outline:none;
 	min-height: calc(1rem + 1vh);
-	max-height: 500px;
+	max-height: 33vh;
 	max-width: 800px;
 }
-
+.VidControls {
+	display: flex;
+	justify-content: space-between;
+	/*max-width: 230px;*/
+	margin: 0 auto;
+}
+.VidControls > code, .VidControls > h3 {
+	line-height: calc(2rem + 1vw);
+	padding: 0 0.3rem;
+}
+.VidControls > h3 {
+	font-size: 1.1rem;
+}
+.VidControls > code {
+	cursor: pointer;
+	font-size: calc(1.5rem + 0.5vw);
+}
+iframe {
+	width: 80vw;
+	max-width: 800px;
+	height: 50vh;
+	max-height: 450px;
+}
