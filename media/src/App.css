@@ -6,8 +6,59 @@ html, body {
 body {
 	background: rgb(0,0,0);
 }
-
 h1, h2, h3, code, a {
 	font-weight: 300;
 	margin: 0;
 }
+header {
+	position: sticky;
+	top: 0;
+	backdrop-filter: blur(9px);
+	background: rgba(240,240,240,0.3);
+	z-index: 5;
+}
+header > h1 {
+	color: rgba(0,0,0,0.6);
+	text-align: center;
+	letter-spacing: 0.4vw;
+	line-height: 3rem;
+}
+section {
+	display: grid;
+	padding: 10vh 0;
+	grid-gap: 5vh;
+	width: 90%;
+	max-width: 900px;
+	margin: 0 auto;
+}
+main, main > video, main > img {
+	margin: 2vh auto;
+	max-height: 40vh;
+}
+img {
+	border-radius: 50%;
+}
+code {
+	text-align: center;
+	font-size: 2rem;
+	color: rgba(15,225,10,0.9);
+}
+h3 {
+	font-weight: 400;
+	color: rgb(140,140,160);
+	letter-spacing: 0.1vw;
+}
+textarea {
+	padding: 2vh 2vw;
+	font-size: calc(1rem + 1vh);
+	line-height: calc(1.5rem + 2vh);
+	background: rgba(66,66,67,0.4);
+	color:#00FF59;
+	border:none; 
+	width: 90%;
+	outline:none;
+	min-height: calc(1rem + 1vh);
+	max-height: 500px;
+	max-width: 800px;
+}
+

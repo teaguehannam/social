@@ -8,7 +8,7 @@ export const Links = [
     "link": "https://github.com/teaguehannam"
   },
   {
-    "name": "Soundcloud",
+    "name": "SoundCloud",
     "link": "https://soundcloud.com/teayo/"
   },
   {
@@ -16,12 +16,8 @@ export const Links = [
     "link": "https://media.teaguehannam.com/"
   },
   {
-    "name": "Notepad",
+    "name": "Notes",
     "link": "https://notes.teaguehannam.com/"
-  },
-  {
-    "name": "Stack Overflow",
-    "link": "https://stackoverflow.com/users/14168754/"
   },
   {
     "name": "Nutrients",
