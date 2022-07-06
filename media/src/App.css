@@ -13,8 +13,8 @@ h1, h2, h3, code, a {
 header {
 	position: sticky;
 	top: 0;
-	backdrop-filter: blur(9px);
-	background: rgba(240,240,240,0.3);
+	background: rgba(42,42,42,0.6);
+	backdrop-filter: blur(0.3rem);
 	z-index: 5;
 }
 header > h1 {
@@ -33,11 +33,7 @@ section {
 }
 main {
 	display: grid;
-}
-main, main > video, main > img {
-	margin: 4vh auto;
-	max-height: 40vh;
-	max-width: 80vw;
+	margin: 6vh auto;
 }
 img {
 	border-radius: 50%;
@@ -60,8 +56,9 @@ textarea {
 	color:#00FF59;
 	border:none; 
 	outline:none;
-	min-height: calc(1rem + 1vh);
+	min-height: calc(1.5rem + 2vh);
 	max-height: 33vh;
+	min-width: 200px;
 	max-width: 800px;
 }
 .VidControls {

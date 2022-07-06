@@ -19,7 +19,7 @@
     return new String(randomize.slice(0, 3)).replace(/,/g, '');
   }
 
-  // music player
+  // youtube player vids
   const youtubes = [
     'WIuNAmt15t4',
     'zFfL0y3zyfc',
@@ -61,7 +61,6 @@
 </header>
 
 <section>
-
   <main>
     <h3>{intro}</h3>
   </main>
@@ -71,7 +70,6 @@
       bind:value={textbox}
       on:keypress={hdlEnter} />
   </main>
-
   <main>
     <iframe
       src={`https://www.youtube.com/embed/${youtubes[currentVid]}`}
@@ -81,7 +79,6 @@
       allowfullscreen>
     </iframe>
   </main>
-
   <main>
     <div class="VidControls">
       <code on:click={prevYt}>⏮️</code>
@@ -89,17 +86,7 @@
       <code on:click={nextYt}>⏭️</code>
     </div>
   </main>
-  
-
-  <main>
-    <video controls>
-      <source src={ocean} type="video/mp4">
-        - video here -
-    </video>
-  </main>
-
   <main>
     <img src={loading} alt="Load vid" />
   </main>
-
 </section>
