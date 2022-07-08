@@ -22,9 +22,9 @@
   // youtube player vids
   const youtubes = [
     'WIuNAmt15t4',
-    'zFfL0y3zyfc',
-    'gPAU0v4U0xI',
     'xSh1B70mrnQ',
+    'wPGWPzJpoU0',
+    'zFfL0y3zyfc',
   ]
 
   let currentVid = 0;
