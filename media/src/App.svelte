@@ -1,11 +1,8 @@
 <script>
-  import ocean from './vids/ocean.mp4'
-  import loading from './vids/loading.gif'
-
-  // header emojis
-  let innerWidth = window.innerWidth || 0;
-  let emojis = selectEmojis();
-  let textbox;
+  const playlist = new String('https://www.youtube.com/embed?listType=playlist&list=PL5WBz5u6UE9IMTzbFCnCn9EbvVNHxfHWj')
+  let innerWidth = new Number(window.innerWidth || 0)
+  let emojis = selectEmojis()
+  let textbox // html textrea
 
   function selectEmojis() {
     let randomize = [
@@ -14,79 +11,23 @@
       '😎','👻','👽',
       '👇','🤘','✌',
       '😹','💀','💦'].sort(() => 0.5 - Math.random());
-
     randomize.unshift('🧙‍♂️'); // always have wizard
     return new String(randomize.slice(0, 3)).replace(/,/g, '');
   }
-
-  // youtube player vids
-  const youtubes = [
-    'WIuNAmt15t4',
-    'xSh1B70mrnQ',
-    'wPGWPzJpoU0',
-    'zFfL0y3zyfc',
-  ]
-
-  let currentVid = 0;
-
-  const prevYt = () => {
-    if (currentVid !== 0) {
-      currentVid -= 1;
-    } else {
-      currentVid = youtubes.length - 1;
-    }
-  }
-
-  const nextYt = () => {
-    if (currentVid + 1 !== youtubes.length) {
-      currentVid += 1;
-    } else {
-      currentVid = 0;
-    }
-  }
-
-  let intro = '¡Media hosting happens here!'
-  function hdlEnter(e) {
-    if (e.key === 'Enter') {
-      intro = textbox
-    }
-  }
-
 </script>
 
-<svelte:window bind:innerWidth />
 
+<svelte:window bind:innerWidth />
 <header on:click={() => emojis = selectEmojis()}>
-    <h1>{new String().padStart((innerWidth * 0.04142), emojis)}</h1>
+    <h1 class="NoSelect">
+      {new String().padStart((innerWidth * 0.04142), emojis)}
+    </h1>
 </header>
 
-<section>
-  <main>
-    <h3>{intro}</h3>
-  </main>
-  <main>
-    <textarea 
-      placeholder="free text box"
-      bind:value={textbox}
-      on:keypress={hdlEnter} />
-  </main>
-  <main>
-    <iframe
-      src={`https://www.youtube.com/embed/${youtubes[currentVid]}`}
-      title="Song from YouTube"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen>
-    </iframe>
-  </main>
-  <main>
-    <div class="VidControls">
-      <code on:click={prevYt}>⏮️</code>
-      <h3>{currentVid + 1} / {youtubes.length}</h3>
-      <code on:click={nextYt}>⏭️</code>
-    </div>
-  </main>
-  <main>
-    <img src={loading} alt="Load vid" />
-  </main>
-</section>
+<iframe src={playlist}
+  title="YouTube video"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+  referrerpolicy="no-referrer-when-downgrade" >
+</iframe>
