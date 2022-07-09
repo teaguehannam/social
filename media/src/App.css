@@ -30,8 +30,31 @@ header > h1 {
 }
 iframe {
 	height: calc(100vh - 6rem);
-	width: calc(100vw - 6rem);
-	display: block;
 	margin: 0 auto;
+	border-radius: 2.4rem 0.9rem;
+	width: calc(98vw - 2rem);
+	display: block;
 }
-
+footer {
+	position: fixed;
+	width: 100vw;
+	display: flex;
+	justify-content: space-between;
+}
+footer > h3 {
+	min-width: 100px;
+	width: 33vw;
+	max-width: 444px;
+	line-height: 3rem;	
+	background: rgba(252,252,252,0);
+	color: rgba(2,22,252,0);
+	text-align: center;
+	letter-spacing: 3px;
+	transition: 0.2s letter-spacing, 0.2s color;
+}
+footer > h3:hover {
+	letter-spacing: 0px;
+	font-weight: 600;
+	cursor: pointer;
+	color: rgba(222,252,252,0.8);
+}
