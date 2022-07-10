@@ -1,15 +1,7 @@
 export const Links = [
   {
-    "name": "Contact",
-    "link": "https://contact.teaguehannam.com"
-  },
-  {
     "name": "Github",
     "link": "https://github.com/teaguehannam"
-  },
-  {
-    "name": "SoundCloud",
-    "link": "https://soundcloud.com/teayo/"
   },
   {
     "name": "Media",
