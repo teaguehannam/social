@@ -19,5 +19,5 @@ export const links = [
   {
     "name": "YouTube",
     "link": "https://www.youtube.com/channel/UCZOwiWmYnooVVsVAYmewOhg/playlists"
-  }
+  },
 ];

@@ -6,8 +6,9 @@ html, body {
 }
 
 body {
-	background: rgb(20,21,23);
-	background: url('../bg.webp') no-repeat center center fixed; 
+	max-width: 900px;
+	background: rgb(20,20,20);
+	/*background: url('../bg.webp') no-repeat center center fixed; */
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -22,4 +23,37 @@ body {
 a, a:visited {
 	color: rgb(184,184,184);
 	text-decoration: none;
+}
+
+h1 {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	margin: 0;
+	line-height: 1.8rem;
+	color: rgba(180,180,180,0.3);
+	letter-spacing: 0.1vw;
+	font-weight: 100;
+	font-size: 1.2rem;
+	text-align: center;
+	padding: 0 2.4vw;
+}
+h1:hover {
+	color: rgba(229,228,255,0.4);
+}
+main {
+	display: grid;
+	align-items: center;
+}
+a {
+	display: block;
+	text-align: center;
+	font-size: calc(1.8rem + 1vw);
+	line-height: calc(100vh / 5 - (1.8rem  / 5));
+	transition: 0.12s all ease-out;
+}
+a:hover, a:active, a:focus {
+	backdrop-filter: blur(7px);
+	background: rgba(20,20,20,0.6);
+	color: white;
 }
