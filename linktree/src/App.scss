@@ -20,11 +20,6 @@ body {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
-a, a:visited {
-	color: rgb(184,184,184);
-	text-decoration: none;
-}
-
 h1 {
 	position: fixed;
 	bottom: 0;
@@ -37,23 +32,32 @@ h1 {
 	font-size: 1.2rem;
 	text-align: center;
 	padding: 0 2.4vw;
+	&:hover {
+		color: rgba(229,228,255,0.4);
+	}
 }
-h1:hover {
-	color: rgba(229,228,255,0.4);
-}
+
 main {
 	display: grid;
 	align-items: center;
-}
-a {
-	display: block;
-	text-align: center;
-	font-size: calc(1.8rem + 1vw);
-	line-height: calc(100vh / 5 - (1.8rem  / 5));
-	transition: 0.12s all ease-out;
-}
-a:hover, a:active, a:focus {
-	backdrop-filter: blur(7px);
-	background: rgba(20,20,20,0.6);
-	color: white;
+	
+	a {
+		display: block;
+		text-align: center;
+		font-size: calc(1.8rem + 1vw);
+		line-height: calc(100vh / 5 - (1.8rem  / 5));
+		transition: 0.12s all ease-out;
+		text-decoration: none;
+		color: rgb(90,99,99);
+
+		&:visited {
+			color: rgb(128,128,128);
+		}
+
+		&:hover, &:active, &:focus {
+			backdrop-filter: blur(7px);
+			background: rgba(20,20,20,0.6);
+			color: white;
+		}
+	}
 }

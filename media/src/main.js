@@ -1,9 +1,6 @@
-
-
 import App from './App.svelte'
-import './App.css'
+import './App.scss'
 
-// render App on DOM
 const app = new App({ target: document.body })
 
 export default app
