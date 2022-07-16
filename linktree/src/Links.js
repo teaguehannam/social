@@ -5,6 +5,10 @@ export const links = [
     "link": "https://github.com/teaguehannam"
   },
   {
+    "name": "Flickr",
+    "link": "https://www.flickr.com/photos/teayo"
+  },
+  {
     "name": "Media",
     "link": "https://media.teaguehannam.com/"
   },
