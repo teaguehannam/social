@@ -9,6 +9,10 @@ export const links = [
     "link": "https://www.flickr.com/photos/teayo"
   },
   {
+    "name": "Insta",
+    "link": "https://insta.teaguehannam.com/"
+  },
+  {
     "name": "Media",
     "link": "https://media.teaguehannam.com/"
   },
@@ -17,7 +21,7 @@ export const links = [
     "link": "https://notes.teaguehannam.com/"
   },
   {
-    "name": "Nutrients",
+    "name": "Nutrition",
     "link": "https://nutrientinfo.app/"
   },
   {
