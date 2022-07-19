@@ -24,8 +24,4 @@ export const links = [
     "name": "Nutrition",
     "link": "https://nutrientinfo.app/"
   },
-  {
-    "name": "YouTube",
-    "link": "https://www.youtube.com/channel/UCZOwiWmYnooVVsVAYmewOhg/playlists"
-  },
 ];
